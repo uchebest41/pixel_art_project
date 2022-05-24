@@ -8,7 +8,10 @@ const gridWidth= document.getElementById('inputWidth');
 const form = document.getElementById('sizePicker');
 form.addEventListener('submit', function(event) {
   event.preventDefault();
-  $("#pixelCanvas tr").remove();
+  // the below code will help to clear the table
+  table.innerHTML="";
+  //  jquery code comment out below
+  // $("#pixelCanvas tr").remove();
 
   // retrieve the inputHeight and inputWidth
 //   const text = document.getElementById('formInput').value;
